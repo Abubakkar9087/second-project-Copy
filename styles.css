@@ -1,0 +1,937 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(27, 27, 27);
+    overflow-x: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    overflow-x: hidden;
+
+}
+.imgcont{ /* contain the language and sign in btn part */
+    margin-right: 10%;
+    margin-left: 10px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero{
+    width: 100%;
+    height:677px;
+    background-color: rgba(214, 214, 212, 0.589);
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/826348c2-cdcb-42a0-bc11-a788478ba5a2/6d20b198-e7ab-4e9f-a1aa-666faa0298f9/IN-en-20240729-POP_SIGNUP_TWO_WEEKS-perspective_WEB_a67d8c9e-8121-4a74-98e4-8005eb2df227_small.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    overflow-x: hidden;
+}
+.hero::after{
+        content: ''; /* Creates a pseudo-element */
+        position: absolute; /* Allows positioning over the image */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+        pointer-events: none; /* Ensures the overlay doesn't interfere with mouse events on the image */
+        
+    }
+
+nav{
+    padding: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.netflix{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin-top:7px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+.netlogo{
+    width: 180px;
+    height: 80px;
+    margin-left: 10%;
+    overflow-x: hidden;
+}
+button{
+    padding: 10px;
+    background-color: rgb(238, 5, 5);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    font-family: Arial Rounded MT;
+    overflow-x: hidden;
+    margin-left: 10px;
+    
+}
+option{
+    color: rgb(0, 0, 0);
+    font-family: Arial Unicode MS;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow-x: hidden;
+    
+}
+
+select{
+    padding: 5px;
+     height: auto;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-family: Arial Unicode MS;
+    font-size: 1em;
+    overflow-x: hidden;
+}
+.mail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+.getstart{
+    background-color: rgb(228, 15, 15);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    overflow-x: hidden;
+    padding:16px;
+    font-size: 25px;
+    font-family: Arial Rounded MT;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#email{
+    padding: 5px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: rgba(48, 47, 47, 0.479);
+    color: white;
+    font-weight: bold;
+    font-family: Arial ;
+    font-size: 1em;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+.secondline{
+    font-size: 50px;
+    overflow-x: hidden;
+}
+.secondlines{
+    font-weight: bold;
+}
+.mailbtn{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 150px;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.tv{
+    width: 500px;
+    padding: 10px;
+    height: auto;
+    margin-top: 10px;
+    overflow-y: hidden;
+}
+.cardimg img{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    
+}
+.cardimg{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 30px;
+}
+.cardvid{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -285px;
+    margin-left: 7%;
+    overflow-y: hidden;
+}
+.cardvid .video{
+        width: 100%;
+        height: 100%;
+        margin-top: 5px;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+}
+.tv2inner{
+    width: auto;
+    height: 90px;
+    background-color: rgb(0, 0, 0) ;
+    border-radius: 10px;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+.tv2inner1{
+    width: 65px;
+    height: 80px;
+    background-color: rgba(47, 48, 48, 0.541);
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-image: url('img/boxshot.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0px;
+    overflow-x: hidden;
+}
+.tv2inner2{
+    width: 150px;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 5px;
+    margin-left: 6%;
+    border-radius: 5px;
+    overflow-x: hidden;
+}
+.tv2innercont{
+    font-size: 17px;
+    font-weight: lighter;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tv2innercont1{
+    font-size: 15px;
+    color: rgb(62, 62, 255);
+    text-shadow: none;
+    margin-top: -0px;
+    overflow-x: hidden;
+    font-family: arial;
+    font-weight: lighter;
+}
+.default-ltr-cache-1q4up1i {
+    width: 3rem;
+    height: 3rem;
+    outline: 2px solid rgb(0, 0, 0);
+    outline-offset: -2px;
+    display: block;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    content: '';
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+
+}
+.tv2innercontdown{
+    width: 50px;
+    height: 80px;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    align-items: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+.cardimg2{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+.cardimg2 img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+.cardlogo2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -130px;
+    position: relative;
+    z-index: 1;
+}
+.cardimg3 img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    
+}
+.cardimg3{
+    width: 100%;
+    height: 350px;
+}
+.cardvid3{
+    width: 65%;
+    height: 195px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -320px;
+    margin-left: 16%;
+    overflow-y: hidden;
+}
+.cardvid3 .video1{
+        width: 100%;
+        height: 100%;
+        margin-top: 5px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+}
+.cardimg4 img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: white;
+    text-align: start;
+    font-size: 60px;
+    font-family: Franklin Gothic;
+    font-weight: bold;
+    text-shadow:0 0 5px rgb(0, 0, 0);
+    margin-top: 15px;
+    overflow-x: hidden;
+}
+p{
+    color: white;
+    text-align: start;
+    font-size: 25px;
+    font-family: Calibri;
+    font-weight: bold;
+    text-shadow:0 0 5px rgb(0, 0, 0);
+    margin-top: 15px;
+    overflow-x: hidden;
+}
+.faq{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+
+}
+
+.faqcontain{
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+
+}
+.faqcontent{
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    background-color: rgb(49, 49, 49);
+    border: 1px solid black;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.faqcontent:hover{
+    background-color: rgb(71, 71, 71);
+}
+.faqcontents{
+    width: 100%;
+    height: auto;
+    background-color: rgba(49, 49, 49, 0);
+    margin-right: 30px;
+    
+}
+.faqcontentspara{
+    color: white;
+    font-size: 30px;
+    font-family: Calibri;
+    font-weight:lighter;
+    overflow-y: visible;
+    text-align: left;
+}
+
+#faqcontentsym{
+    max-width: 50px;
+   text-align: center;
+}
+.faqcontentsymbol{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+span i{
+    color: yellow;
+    font-weight:unset;    
+}
+.faq h3{
+    font-family: arial;
+    font-weight: lighter;
+}
+.footer{
+    width: 100%;
+    background-color: rgba(10, 47, 80, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(170, 168, 168);
+    margin-left: 10%;
+}
+.footer ul{
+    padding: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.footer ul li{
+    margin-top: 20px;
+    list-style: none;
+    font-family: arial;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media(max-width: 1039px){
+    .tv{
+        width: 490px;
+        padding: 10px;
+        height: auto;
+        margin-top: 10px;
+    }
+    .netflix{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media(max-width:1024px){
+    .tvcontent{
+        font-size: 51px;
+    }
+    .netflix{
+        width: 100%;
+        height: 100%;
+    }
+    .netlogo {
+        width: 160px;
+        height: 70px;
+        margin-left: 3%;
+    }
+    .imgcont{ /* contain the language and sign in btn part */
+        margin-right: 5%;
+    }
+    select{
+        margin-right: 20px;
+    }
+    .tv{
+        width: 450px;
+        margin-right: 10px;
+    }
+    
+    .faqcontent1{
+        font-size: 50px;
+    }
+    .faqcontain{
+        width: 95%;
+        height: auto;
+    }
+    .footer ul{
+        padding: 20px;        
+    }
+    .footer{
+        margin-left: 10px;
+        font-weight: lighter;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .container{
+        width: 100%;
+        overflow: hidden;   
+    }
+    .hero{
+        width: 100%;
+        height:auto;
+        background-color: rgba(214, 214, 212, 0.589);
+        background-image: url('img/netbg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    p{
+        font-size: 20px;
+        text-align: center;
+        font-weight: 500;
+    }
+    .mailbtn{
+        padding: 10px;
+        width: auto;
+        height: auto;
+        margin-bottom: 50px;
+        margin-top: 15%;
+    }
+    .tv{
+        margin-right: 0px;
+        width: 500px;
+        height: auto;
+        margin-top: 10px;
+    }
+    #netflix-2, #netflix-4{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+}
+@media (max-width: 768px){
+    .secondline {
+        font-size: 35px;
+        overflow-x: hidden;
+    }
+    .mailbtn {
+        padding: 10px;
+        width: auto;
+        height: auto;
+        margin-bottom: 100px; 
+        margin-top: 120px;
+    }
+    #email{
+        padding: 5px;
+        height: 40px auto;
+        border-radius: 5px;
+        border: 1px solid gray;
+        background-color: rgba(48, 47, 47, 0.479);
+        color: white;
+        font-weight: normal;
+        width: 350px;
+    }
+    
+    .netlogo {
+        width: 150px;
+        height: 60px;
+        margin-left: 3%;
+        overflow-x: hidden;
+    }
+    #netflix-2, #netflix-4{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .tvcontent{
+        font-size: 33px;
+    }
+    .faqcontent1{
+        font-size: 35px;
+    }
+    .faqcontain{
+        width: 90%;
+        height: auto;
+    }
+    .faqcontent{
+        padding: 10px;
+    }
+    .faqcontentspara{
+        padding: 0px;
+        font-size: 22px;
+    }
+    
+}
+@media (min-width: 300px) and (max-width:608px){
+    .mail {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+    }
+    .faq h3 {
+        font-family: arial;
+        font-weight: lighter;
+        text-align: center;
+    }
+    #email{
+        margin-left: auto;
+        margin-bottom: 15px;
+        height: 40px;
+    }
+    .getstart {
+        width: auto;
+        padding: 14px;
+        font-size: 20px;
+        font-family: Arial Rounded MT;
+        text-decoration: none;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media only screen and (max-width:519px){
+    .cardvid .video {
+        width: 95%;
+        height: 110%;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+    }
+}
+@media (min-width:300px) and (max-width: 470px){
+    .cardimg img{
+        width: 95%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        
+    }
+    .cardimg{
+        width: 100%;
+        height: 350px;
+    }
+    .cardvid{
+        width: 80%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -265px;
+        margin-left: 7%;
+        overflow-y: hidden;
+    }
+    .cardvid .video{
+        width: 100%;
+        height: 100%;
+        margin-top: 5px;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+    }
+}
+@media(min-width: 100px) and (max-width:430px){
+    .netlogo{
+        width: 120px;
+        height: 60px;
+        margin-left: 1%;
+        overflow-x: hidden;       
+    }
+    select{
+        margin-right: 0px;
+    }
+    .mailbtn {
+        padding: 10px;
+        width: auto;
+        height: auto;
+        margin-bottom: 100px; 
+        margin-top: 50px;
+    }
+    .mail{
+        display: flex;    
+        padding: 10px; 
+    }
+    #email{
+        padding: 5px;
+        height: 38px;
+        width: 320px;
+        margin-bottom: 10px;
+    }
+    .getstart {
+        background-color: rgb(228, 15, 15);
+        width: auto;
+        padding: 13px;
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 8px;
+    }
+    .tv {
+        margin-right: 0px;
+        width: auto;
+        height: auto;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+    .cardimg img{
+        width: 95%;
+        height: fit-content;
+        background-image: url(img/tvd.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        margin-left: 8px;
+    }
+    .cardimg {
+        width: 100%;
+        height: 300px;
+    }
+    .cardimg2 img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .cardlogo2 {
+        width: 100%;
+        height: auto;
+        margin-top: -95px;
+        overflow: hidden;
+    }
+    .tv2inner {
+        width: auto;
+        height: 55px;
+        
+    }
+    .tv2inner1 {
+        width: 40px;
+        height: 50px;
+    }
+    .tv2inner2 {
+        width: 145px;
+        height: 48px;
+        margin-top: 0px;
+    }
+    .tv2innercont{
+        margin-top: 8px;
+        font-size: 15px;
+        font-weight: bolder;
+        text-align: start;
+    }
+    .tv2innercont1{
+        font-size: 13px;
+        text-align: start;
+        margin-top: 5px;
+    }
+    .tv2innercontdown {
+        width: 50px;
+        height: 30px;
+        border-radius: 5px;
+        margin-top: 12px;
+        overflow: hidden;
+    }
+    .cardimg3 img {
+        width: 100%;
+        height: 95%;
+    }
+    .faq h3 {
+        font-family: arial;
+        font-weight: lighter;
+        font-size: 15px;
+        text-align: center;
+    }
+    .footer ul {
+        padding: 10px;
+        font-size: 13px;
+    }
+    button {
+        padding: 9px;
+        width: 80px;
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    select {
+        padding: 3px;
+        font-size: 15px;
+    }
+    .netlogo {
+        width: 100px;
+        height: 40px;
+        margin-left: 1%;
+        overflow-x: hidden;
+    }
+}
+@media (max-width: 375px){
+    .cardimg3 img{
+            height: 92%;      
+    }
+    .faqcontentspara {
+        padding: 0px;
+        font-size: 18px;
+    }   
+    .cardimg {
+        width: 100%;
+        height: 250px auto;
+    }
+    button {
+        padding: 8px;
+        width: 60px;
+        margin-left: 10px;
+        font-size: 11px;
+    }
+    select {
+        padding: 2px;
+        font-size: 14px;
+    }
+    .netlogo {
+        width: 100px;
+        height: 50px;
+        margin-left: 1%;
+        overflow-x: hidden;
+    }
+    #email{
+        width: 100%;
+    }
+}
+@media(max-width: 320px){
+    .cardimg {
+        width: 100%;
+        height: 220px;
+    }
+    .cardimg3 img{
+        height: 85%;      
+    }
+    .cardvid3{
+            width: 65%;
+            height: 155px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -280px;
+            margin-left: 16%;
+            overflow-y: hidden;
+        }
+        button {
+            padding: 8px;
+            width: 60px;
+            margin-left: 10px;
+            font-size: 11px;
+        }
+        select {
+            padding: 2px;
+            font-size: 14px;
+        }
+        .netlogo {
+            width: 100px;
+            height: 40px;
+            margin-left: 1%;
+            overflow-x: hidden;
+        }
+    }
+
+@media(max-width: 300px){
+    .cardvid .video {
+        width: 100%;
+        height: 100%;
+        margin-top: 5px;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+    }
+    .cardimg {
+        width: 100%;
+        height: 200px;
+    }
+}
